@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.Font?>
+<VBox maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.News">
+    <children>
+        <AnchorPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0"
+                    prefWidth="700.0" style="-fx-background-color: #FFFFE0;">
+            <children>
+                <AnchorPane maxHeight="400.0" maxWidth="250.0" minHeight="400.0" minWidth="245.0" prefHeight="400.0"
+                            prefWidth="245.0" style="-fx-background-color: #004764;">
+                    <children>
+                        <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="215.0" layoutY="8.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@logout.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="logout" layoutX="215.0" layoutY="8.0" maxHeight="26.0" maxWidth="30.0"
+                                minHeight="26.0" minWidth="30.0" mnemonicParsing="false" prefHeight="26.0"
+                                prefWidth="30.0"
+                                style="-fx-background-color: TRANSPARENT; -fx-text-fill: WHITE;-fx-cursor: hand"/>
+                        <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="91.0" layoutY="14.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@news/news.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="technology" alignment="CENTER" layoutX="62.0" layoutY="141.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Technology">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="sports" alignment="CENTER" layoutX="60.0" layoutY="181.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Sports">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="business" alignment="CENTER" layoutX="60.0" layoutY="223.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Business">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="economy" alignment="CENTER" layoutX="60.0" layoutY="265.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: ORANGE;"
+                                text="Economy">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button alignment="CENTER" layoutX="80.0" layoutY="360.0" mnemonicParsing="false"
+                                style="-fx-background-color: TRANSPARENT; -fx-text-fill: #FFFFE0;" text="CONTACT US">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Line endX="100.0" layoutX="125.0" layoutY="117.0" startX="-100.0"/>
+                        <Line endX="100.0" layoutX="125.0" layoutY="317.0" startX="-100.0"/>
+                    </children>
+                </AnchorPane>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="266.0" layoutY="61.0" stroke="BLACK"
+                           strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient cycleMethod="REPEAT" endX="0.6401515693375558" endY="0.8020833333333334"
+                                        startX="0.7433712121212122" startY="0.6287879112995032">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color green="0.26522842049598694" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.07317073170731705">
+                                    <color>
+                                        <Color red="1.0" green="0.4606598913669586"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="0.16646095263106067">
+                                    <color>
+                                        <Color red="1.0" green="0.43020305037498474"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="265.0" layoutY="225.0"
+                           stroke="BLACK" strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient endX="0.7840908801916874" endY="0.9848484849049286"
+                                        startX="0.37878784266385174">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.7004912495613098" green="0.7263157963752747"
+                                               blue="0.3389473557472229"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.3400000035762787" green="0.03060000017285347"
+                                               blue="0.03060000017285347"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="479.0" layoutY="225.0"
+                           stroke="BLACK" strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.4507575613079649">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.6299999952316284" green="0.7221370935440063"
+                                               blue="0.8399999737739563"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="480.0" layoutY="61.0" stroke="BLACK"
+                           strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient endX="0.20075759743199195" endY="1.0" startX="1.0" startY="0.7689393831021858">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.05810000002384186" green="0.7612342238426208"
+                                               blue="0.8299999833106995"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.7789473533630371" green="0.7789473533630371"
+                                               blue="0.7789473533630371"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <ImageView fitHeight="129.0" fitWidth="175.0" layoutX="492.0" layoutY="246.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@economy/economy4.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <viewport>
+                        <Rectangle2D/>
+                    </viewport>
+                </ImageView>
+                <ImageView cache="true" fitHeight="132.0" fitWidth="168.0" layoutX="281.0" layoutY="105.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@economy/economy1.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+                <ImageView fitHeight="106.0" fitWidth="201.0" layoutX="271.0" layoutY="268.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@economy/economy3.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+                <ImageView cache="true" fitHeight="150.0" fitWidth="201.0" layoutX="503.0" layoutY="61.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@economy/economy2.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+                <Label layoutX="414.0" layoutY="24.0" text="ECONOMY NEWS ">
+                    <font>
+                        <Font name="Arial Bold" size="15.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,20 @@
+Username: s
+Password: 1
+Gender: RadioButton[id=female, styleClass=radio-button]'Female'
+Email: s
+
+Username: ss
+Password: sd
+Gender: RadioButton[id=female, styleClass=radio-button]'Female'
+Email: s    
+
+Username: sd
+Password: sd
+Gender: RadioButton[id=female, styleClass=radio-button]'Female'
+Email: sd
+
+Username: sda
+Password: qq
+Gender: RadioButton[id=female, styleClass=radio-button]'Female'
+Email: asd
+

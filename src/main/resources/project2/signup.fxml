@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="project2.SignUpController">
+    <AnchorPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0"
+                prefWidth="700.0" style="-fx-background-color: white;" VBox.vgrow="ALWAYS">
+        <ImageView fitHeight="284.0" fitWidth="327.0" layoutX="43.0" layoutY="45.0">
+            <image>
+                <Image url="@signup.png"/>
+            </image>
+        </ImageView>
+        <Label layoutX="494.0" layoutY="55.0" text="SIGN UP">
+            <font>
+                <Font name="Arial Black" size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="usernameField" layoutX="461.0" layoutY="110.0" promptText=" Username"
+                   style="-fx-background-color: #DCDCDC;"/>
+        <PasswordField fx:id="passwordField" layoutX="461.0" layoutY="145.0" promptText=" Password"
+                       style="-fx-background-color: #DCDCDC;"/>
+        <TextField fx:id="emailField" layoutX="460.0" layoutY="210.0" promptText=" Email"
+                   style="-fx-background-color: #DCDCDC;"/>
+        <Button fx:id="signup_" layoutX="494.0" layoutY="270.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="84.0"
+                style="-fx-background-color: #cc5500; -fx-text-fill: WHITE; -fx-border-radius: 10;-fx-cursor: hand"
+                text="Sign Up" onAction="#signUpAction"/>
+        <Line endX="16.000030517578125" endY="268.60003662109375" layoutX="363.0" layoutY="107.0"
+              startX="16.000030517578125" startY="-104.80000305175781" style="-fx-stroke: #cc5500;"/>
+        <RadioButton fx:id="male" layoutX="427.0" layoutY="180.0" text="Male">
+            <toggleGroup>
+                <ToggleGroup fx:id="gender"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="female" layoutX="505.0" layoutY="180.0" text="Female">
+            <toggleGroup>
+                <fx:reference source="gender"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="others" layoutX="593.0" layoutY="180.0" text="Other">
+            <toggleGroup>
+                <fx:reference source="gender"/>
+            </toggleGroup>
+        </RadioButton>
+        <Text layoutX="467.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already a member?"/>
+        <Button fx:id="login_" layoutX="570.0" layoutY="333.0" mnemonicParsing="false"
+                style="-fx-background-color: TRANSPARENT; -fx-text-fill: #cc5500;-fx-cursor: hand" text="Log In"
+                underline="true" onAction="#loginAction"/>
+    </AnchorPane>
+</VBox>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<VBox maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0" prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project2.News">
+    <children>
+        <AnchorPane maxHeight="400.0" maxWidth="700.0" minHeight="400.0" minWidth="700.0" prefHeight="400.0"
+                    prefWidth="700.0" style="-fx-background-color: #FFFFE0;">
+            <children>
+                <AnchorPane maxHeight="400.0" maxWidth="250.0" minHeight="400.0" minWidth="250.0" prefHeight="400.0"
+                            prefWidth="250.0" style="-fx-background-color: #004764;">
+                    <children>
+                        <ImageView fitHeight="68.0" fitWidth="75.0" layoutX="91.0" layoutY="14.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@news/news.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="technology" alignment="CENTER" layoutX="62.0" layoutY="141.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Technology">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="sports" alignment="CENTER" layoutX="60.0" layoutY="181.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Sports">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="business" alignment="CENTER" layoutX="60.0" layoutY="223.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Business">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button fx:id="economy" alignment="CENTER" layoutX="60.0" layoutY="265.0" maxHeight="25.0"
+                                maxWidth="125.0" minHeight="25.0" minWidth="125.0" mnemonicParsing="false"
+                                prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #FFFFE0;"
+                                text="Economy">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Button alignment="CENTER" layoutX="80.0" layoutY="360.0" mnemonicParsing="false"
+                                style="-fx-background-color: TRANSPARENT; -fx-text-fill: #FFFFE0;" text="CONTACT US">
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+                        </Button>
+                        <Line endX="100.0" layoutX="125.0" layoutY="117.0" startX="-100.0"/>
+                        <Line endX="100.0" layoutX="125.0" layoutY="317.0" startX="-100.0"/>
+                        <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="223.0" layoutY="8.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@logout.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="logout" layoutX="221.0" layoutY="8.0" maxHeight="26.0" maxWidth="30.0"
+                                minHeight="26.0" minWidth="30.0" mnemonicParsing="false" prefHeight="26.0"
+                                prefWidth="30.0"
+                                style="-fx-background-color: TRANSPARENT; -fx-text-fill: WHITE;-fx-cursor: HAND"/>
+                    </children>
+                </AnchorPane>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="265.0" layoutY="34.0" stroke="BLACK"
+                           strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="265.0" layoutY="200.0"
+                           stroke="BLACK" strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="0.9666666388511658" green="1.0"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="480.0" layoutY="200.0"
+                           stroke="BLACK" strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient startX="1.0" startY="0.4507575613079649">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color green="0.27950000762939453" blue="0.38999998569488525"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <Rectangle arcHeight="30.0" arcWidth="30.0" height="150.0" layoutX="480.0" layoutY="34.0" stroke="BLACK"
+                           strokeType="INSIDE" width="200.0">
+                    <fill>
+                        <LinearGradient cycleMethod="REPEAT" endX="0.20075759743199195" endY="1.0"
+                                        startX="0.03030303019014272" startY="0.7689393831021858">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color red="1.0" green="0.6333333253860474"/>
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="0.1473684161901474" green="0.10042884945869446"
+                                               blue="0.030019493773579597"/>
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                </Rectangle>
+                <ImageView fitHeight="143.0" fitWidth="201.0" layoutX="480.0" layoutY="208.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@news/economy.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                    <viewport>
+                        <Rectangle2D/>
+                    </viewport>
+                </ImageView>
+                <ImageView cache="true" fitHeight="150.0" fitWidth="200.0" layoutX="265.0" layoutY="37.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@news/tech.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+                <ImageView fitHeight="105.0" fitWidth="216.0" layoutX="265.0" layoutY="245.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@news/business.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+                <ImageView cache="true" fitHeight="115.0" fitWidth="116.0" layoutX="522.0" layoutY="53.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@news/sport.png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND"/>
+                    </cursor>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
